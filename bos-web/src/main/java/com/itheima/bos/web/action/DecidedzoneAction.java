@@ -55,6 +55,9 @@ public class DecidedzoneAction extends IBaseAction<Decidedzone> {
     }
 
 
+
+
+
     //属性驱动，接收页面提交的多个客户id
     private List<Integer> customerIds;
 

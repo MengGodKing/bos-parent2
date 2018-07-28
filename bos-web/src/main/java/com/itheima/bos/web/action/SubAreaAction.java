@@ -105,6 +105,16 @@ public class SubAreaAction extends IBaseAction<Subarea> {
 
 
     /**
+     * 根据定区id查询所对应的关联分区立标
+     */
+    public String findSubareList(){
+        List<Subarea> subareas = subAreaService.findSubareListByDecideareId(model.getDecidedzone().getId());
+        java2Json(subareas,new String[]{"decidedzone","subareas"});
+        return NONE;
+    }
+
+
+    /**
      * 在内存中创建一个自定义的 HSSFWorkbook
      * @param list
      * @return

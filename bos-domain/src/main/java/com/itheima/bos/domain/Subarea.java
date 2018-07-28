@@ -23,6 +23,11 @@ public class Subarea implements java.io.Serializable {
 	public Subarea() {
 	}
 
+	public void setDecidedzoneid(String decidedzoneid){
+		setDecidedzone(new Decidedzone());
+		this.decidedzone.setId(decidedzoneid);
+	}
+
 	/** minimal constructor */
 	public Subarea(String id) {
 		this.id = id;

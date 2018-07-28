@@ -14,4 +14,6 @@ public interface SubAreaService {
     public List<Subarea> findAll();
 
     public List<Subarea> findListNotAssociation();
+
+    public List<Subarea> findSubareListByDecideareId(String id);
 }
